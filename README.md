@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# 🐾 DoDay — 랜딩페이지
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **"작은 습관이 내일의 나를 만든다"**
+> DoDay 앱 홍보용 인터랙티브 랜딩페이지입니다.
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+## ✨ 미리보기
 
-### `npm start`
+![DoDay 랜딩페이지](https://via.placeholder.com/800x400/F5F0E8/C49A6C?text=DoDay+Landing+Page)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 프로젝트 소개
 
-### `npm test`
+**DoDay 랜딩페이지**는 루틴 관리 앱 **DoDay**를 홍보하기 위한 SPA(Single Page Application)입니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+쿼카 마스코트와 따뜻한 베이지/브라운 컬러를 활용한 아기자기한 디자인으로,
+앱의 주요 기능을 인터랙티브하게 소개합니다.
 
-### `npm run build`
+<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🐨 주요 기능
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| 기능 | 설명 |
+|------|------|
+| 쿼카 인터랙션 | 마우스 따라 움직이고, 클릭하면 통통 튀어요 |
+| 스크롤 애니메이션 | 스크롤 내릴 때마다 섹션이 부드럽게 등장해요 |
+| 스트릭 데모 | 이번 주 루틴 달성 현황을 시각적으로 보여줘요 |
+| 약관 모달 | 이용약관, 개인정보처리방침 등을 모달로 확인해요 |
+| 반응형 레이아웃 | 모바일/태블릿/데스크톱 모두 지원해요 |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br />
 
-### `npm run eject`
+## 🛠️ 기술 스택
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| 기술 | 버전 | 용도 |
+|------|------|------|
+| React | 18.x | UI 프레임워크 |
+| Framer Motion | 최신 | 애니메이션 |
+| JavaScript (ES6+) | - | 메인 언어 |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📁 프로젝트 구조
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+src/
+├── components/
+│   ├── Navbar.jsx       # 상단 네비게이션
+│   ├── Hero.jsx         # 히어로 섹션 (쿼카 인터랙션)
+│   ├── Features.jsx     # 기능 소개 섹션
+│   ├── StreakDemo.jsx    # 스트릭 데모 섹션
+│   ├── Download.jsx     # 다운로드 섹션
+│   └── Footer.jsx       # 푸터 + 약관 모달
+├── assets/
+│   └── quokka.png       # 쿼카 마스코트 이미지
+├── App.jsx
+├── index.js
+└── index.css
+```
 
-## Learn More
+<br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 로컬 실행 방법
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# 레포 클론
+git clone https://github.com/{username}/doday-landing.git
+cd doday-landing
 
-### Code Splitting
+# 의존성 설치
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 개발 서버 실행
+npm start
+```
 
-### Analyzing the Bundle Size
+브라우저에서 `http://localhost:3000` 접속하면 확인할 수 있어요!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br />
 
-### Making a Progressive Web App
+## 🎨 디자인 컨셉
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| 항목 | 내용 |
+|------|------|
+| 컬러 | 베이지 (#F5F0E8), 브라운 (#3D2B1F), 카멜 (#C49A6C) |
+| 마스코트 | 쿼카 — 따뜻하고 귀여운 이미지 |
+| 무드 | 아기자기하고 따뜻한 느낌 |
+| 애니메이션 | Framer Motion 기반 부드러운 인터랙션 |
 
-### Advanced Configuration
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📱 섹션 구성
 
-### Deployment
+```
+🏠 Navbar      — DoDay 로고 + 메뉴
+🐾 Hero        — 쿼카 마스코트 + 메인 카피 + CTA 버튼
+✨ Features    — 루틴 설정 / 데일리 체크 / 성취도 리포트
+📊 StreakDemo  — 이번 주 달성 현황 데모
+📲 Download   — 앱 다운로드 CTA
+📋 Footer     — 서비스 링크 + 약관 모달
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br />
 
-### `npm run build` fails to minify
+## 🔗 관련 레포지토리
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| 레포 | 설명 |
+|------|------|
+| [doday-backend](https://github.com/{username}/doday) | Spring 백엔드 서버 |
+| [doday-app](https://github.com/{username}/doday-app) | Flutter 앱 (예정) |
+
+<br />
+
+---
+
+<div align="center">
+  <sub>Built with ☕ and 🐾 | DoDay Landing Page</sub>
+</div>
