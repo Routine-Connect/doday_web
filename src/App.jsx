@@ -5,6 +5,7 @@ import Features from './components/Features';
 import StreakDemo from './components/StreakDemo';
 import Download from './components/Download';
 import Footer from './components/Footer';
+import ChatBot from './components/ChatBot';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <StreakDemo />
       <Download />
       <Footer />
+      <ChatBot />
     </div>
   );
 }
