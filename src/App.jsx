@@ -6,10 +6,15 @@ import StreakDemo from './components/StreakDemo';
 import Download from './components/Download';
 import Footer from './components/Footer';
 import ChatBot from './components/ChatBot';
+import FloatingElements from './components/FloatingElements';
+import ScrollProgress from './components/ScrollProgress';
 
 function App() {
   return (
     <div>
+      <ScrollProgress />
+      <FloatingElements />
+      <div style={{ position: 'relative', zIndex: 1 }}></div>
       <Navbar />
       <Hero />
       <Features />
